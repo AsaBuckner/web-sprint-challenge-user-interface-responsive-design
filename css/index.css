@@ -85,6 +85,7 @@ p, a {
 }
 
 /* header section */
+
 header {
     width: 100%;
     height: 65vh;
@@ -96,41 +97,53 @@ header {
 
 }
 
+
 .header{
-padding-top: 5%;
-
-
-}
-
-header div{
-border: 2px solid red;
-    width: 100%;
-    height: 50%;
-    background-color: rgba(0, 4, 17, .7);
+    padding-top: 5%;
+    
+    
+    }
+    
+    header div{
+    
+        width: 100%;
+        height: 20vw;
+        background-color: rgba(0, 4, 17, .7);
+        display: flex;
+        gap: 4%;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    header nav{
+        background: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    
+    header nav .links{
+    background: none;
     display: flex;
-    gap: 4%;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
-
-
-header nav{
-display: flex;
-flex-direction: row;
-width: 80%;
-justify-content: space-around;
-
-}
-
-header div.social_links {
-background: none;
-flex-direction: row;
-width: 40%;
-height: auto;
-justify-content: space-around;
-
-}
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    }
+    
+    header div.social_links {
+    background: none;
+    flex-direction: row;
+    width: 40%;
+    height: auto;
+    justify-content: space-around;
+    
+    }
+    
+    
 
 /* gallery section */
 .gallery {
@@ -274,16 +287,52 @@ font-size: small;
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    header {
-        width: 75%;
-        height: 75%;
-        margin: 0 auto
-        text-align: center;
-        font-size: 4rem;
-    }
-    header {
-        width: 100%;
-        height: 100%;
+    .header{
+        padding-top: 5%;
+        
+        
+        }
+        
+        header div{
+        
+            width: 100%;
+            height: 20vw;
+            background-color: rgba(0, 4, 17, .7);
+            display: flex;
+            gap: 4%;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+        header nav{
+            background: none;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        
+        header nav .links{
+        background: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+        }
+        
+        header div.social_links {
+        background: none;
+        flex-direction: row;
+        width: 40%;
+        height: auto;
+        justify-content: space-around;
+        
+        }
+        
+        
     /* gallery section */
     .gallery {
         height: auto;
@@ -336,4 +385,4 @@ font-size: small;
         padding-top: 2.5vh;
         font-size: 2rem;
     }
-}
+    }
